@@ -1,0 +1,66 @@
+/*Social media*/
+.footer-social-media {
+
+    &-title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+
+    &-list{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+    }
+
+    margin-top: -120px;
+    padding-left: 300px;
+    align-items:baseline;           
+}
+
+
+
+
+
+
+.footer-social-media-item + .footer-social-media-item{
+    margin-left: 10px;
+}
+
+.footer-social-media-link{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    fill: #FFFFFF;
+    color:  #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: color 300ms linear, fill 300ms linear, outline 300ms linear,background-color 300ms linear;
+  
+    &:focus,
+    &:hover{
+        fill: #FFFFFF;
+        color:  #FFFFFF;
+        outline: 2px solid #FFFFFF;
+        background-color: #2196F3;
+    }
+    
+
+}
+
+

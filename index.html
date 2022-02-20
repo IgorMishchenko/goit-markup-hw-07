@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/index-styles.css"/>
-    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 
 <body>
@@ -18,13 +18,13 @@
         <div class="container container-header">
              <a href="./index.html" class="header-logo-web">Web</a><a href="./index.html" class="header-logo-studio">Studio</a>
                     
-         <ul class="header-nav-list">
+         <ul class="header-nav">
              <li class="header-nav-item"><a href="./index.html" class="header-nav-link-active">Студия</a></li>
              <li class="header-nav-item"><a href="./portfolio.html" class="header-nav-link">Портфолио</a></li>
              <li class="header-nav-item"><a href="./contact.html" class="header-nav-link">Контакты</a></li>
          </ul>
  
-         <ul class="header-contact-list">
+         <ul class="header-contact">
              <li class="header-contact-item">  <a href="mailto:info@example.com" class="header-contact-link"> <svg width="16" height="12"><use href="./images/icons.svg#icon-header-mail" ></use></svg> info@example.com</a></li>
              <li class="header-contact-item">  <a href="tel:+380978725051"       class="header-contact-link"> <svg width="10" height="16"><use href="./images/icons.svg#icon-header-tel" ></use></svg>  0978725051</a></li>
             
@@ -35,14 +35,10 @@
      </div>
      </header>  
 <main>
-    <section class="hero-main">
+    <section class="hero">
         <div class="container">
-            
-
-           
-
-        <h1 class="hero-title">эффективные решения <br/> для вашего бизнеса</h1>
-           <button type="button" class="button" data-modal-open>Заказ услуги</button>
+      <h1 class="hero-title">эффективные решения <br/> для вашего бизнеса</h1>
+           <button type="button" class="hero-button" data-modal-open>Заказ услуги</button>
         
     </section>
 
@@ -135,10 +131,10 @@
     </div>
 
     <address> 
-        <ul class="container-nav-foter">
-            <li class="nav-foter-it"><a href="https://goo.gl/maps/wMssc7S66yAjxJLt8" target="_blank" rel="noopen nofollow noreferrer" class="footer-text-address">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="nav-foter-it"><a href="mailto:info@example.com" class="footer-text-mail">info@example.com</a></li>
-            <li class="nav-foter-it"><a href="tel:+380978725051" class="footer-text-tel"> 097 872 50 51</a></li>
+        <ul class="foter-address">
+            <li class="foter-address-item"><a href="https://goo.gl/maps/wMssc7S66yAjxJLt8" target="_blank" rel="noopen nofollow noreferrer" class="foter-address-text1">г. Киев, пр-т Леси Украинки, 26 </a></li>
+            <li class="foter-address-item"><a href="mailto:info@example.com"                                                                class="foter-address-text2">info@example.com                </a></li>
+            <li class="foter-address-item"><a href="tel:+380978725051"                                                                      class="foter-address-text2"> 097 872 50 51                  </a></li>
         </ul>  
     </address>
 
@@ -147,10 +143,10 @@
         <div>
             <h3 class="footer-social-media-title">Присоединяйтесь</h3>
                    <ul class="footer-social-media-list"> 
-                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-instagram" ></use></svg></a> </li>
-                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-twitter" ></use></svg></a></li>
-                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-facebook"  ></use></svg></a></li>
-                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-linkedin"  ></use></svg></a></li> 
+                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-instagram"></use></svg></a> </li>
+                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-twitter" > </use></svg></a></li>
+                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-facebook"> </use></svg></a></li>
+                <li class="footer-social-media-item"><a href="" class="footer-social-media-link">       <svg width="20" height="20"><use href="./images/icons.svg#icon-social-network-linkedin"> </use></svg></a></li> 
              </ul>
          </div>   
     </section>
@@ -189,8 +185,8 @@
  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
-        <svg class="modal-close-icon" width="12" height="12">
-            <use href="./images/icons.svg#icon-close-btn"></use>
+        <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close-btn1"></use>
           </svg>
       </button>
 
@@ -208,7 +204,7 @@
                 class="modal-input"
                 id="user-name"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-form-name"></use>
               </svg>
             </span>
@@ -224,7 +220,7 @@
           required id="user-tel"
           />
 
-          <svg class="modal-icon" width="18" height="18">
+          <svg class="modal-icon" width="13" height="13">
             <use href="./images/icons.svg#icon-form-phone"></use>
         </svg>
 </span>
@@ -239,7 +235,7 @@
         class="modal-input"
         required id="modal-email"
         />
-        <svg class="modal-icon" width="18" height="18">
+        <svg class="modal-icon" width="15" height="12">
             <use href="./images/icons.svg#icon-form-email"></use>
         </svg>
         </span>
@@ -248,12 +244,14 @@
    
     <div  class="form-field">
         <label for="user-text"  class="modal-label">Коментарии</label>
-       <textarea
+        <span class="modal-input-wrap">
+        <textarea
        name = "user-text"
        id="user-text"
        class="modal-text1" 
        placeholder="Введите текст"
        ></textarea> 
+       </span>
    </div> 
 
  

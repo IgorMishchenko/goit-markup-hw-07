@@ -1,0 +1,17 @@
+//Main colors
+$main-blue-color:  #347cdb;
+$main-black-color: #212121;
+$main-gray-color:  #757575;
+$main-white-color:  #ffffff;
+
+//Font
+@mixin font ($font-family, $font-style, $font-weight, $font-size, $line-height, $text-decoration, $letter-spacing){
+  font-family: $font-family; 
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-decoration: $text-decoration;
+  letter-spacing: $letter-spacing;
+
+}
