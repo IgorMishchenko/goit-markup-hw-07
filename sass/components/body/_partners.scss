@@ -2,17 +2,18 @@
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-   
     margin: 0 auto;
 }
 
 .partners{
     padding-top: 94px;
     padding-bottom: 94px;
+
     &-list{
         display:flex;
         margin-left: -30px;
     }
+
     &-item{
         width: calc(100% / 6 - 30px);
         margin-left: 30px;
@@ -24,33 +25,26 @@
      }
 
      &-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: #212121;
+        @include font(Roboto, normal, bold, 36px, 1.16, none, 0.03em);
+        color: $main-black-color;
         text-align: center;
         margin-bottom: 50px;
     }
 
-    
-&-link{
- 
-    width: 170px;
-    height: 92px;
-    border-radius: 3%;
-
-    border: 1px solid #AFB1B8;
-    fill: #AFB1B8;
-    transition: color 300ms linear, bolder 300ms linear, fill 300ms linear;
-   
-    &:hover, &:focus {
-        fill:#2196F3;
-        color:  #2196F3;
-        border: 1px solid #2196F3;
-    
-    } 
-}
-}
+    &-link{
+        
+        width: 170px;
+        height: 92px;
+        border-radius: 3%;
+        border: 1px solid $main-light-gray-color;
+        fill: $main-light-gray-color;
+        transition: color 300ms linear, bolder 300ms linear, fill 300ms linear;
+        
+            &:hover, &:focus {
+                fill:$main-blue-color;
+                color:  $main-blue-color;
+                border: 1px solid $main-blue-color;
+            
+            } 
+        }
+        }

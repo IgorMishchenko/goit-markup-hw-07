@@ -1,68 +1,44 @@
-/*What we do*/
+// What we do
 .what-we-do{
     padding-bottom: 94px;
+
+    &-item + &-item{
+        margin-left: 27px;
+    }
+
+    &-top-text {
+        @include font(Roboto, normal, bold, 14px, 1.5, none, 0.03em);
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 370px;
+        height: 70px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $main-white-color;
+        background: rgba(47, 48, 58, 0.8);
+        transform: translateY(320%);
+    }
+
     &-title {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: #212121;
+        @include font(Roboto, normal, bold, 36px, 1.16, none, 0.03em);
+         color: $main-black-color;
         text-align: center;
         margin-bottom: 50px;
-        
+    }
     &-wrap{
         position: relative;
-         overflow: visible;
-         
+        overflow: visible;
+        }
+
     &-list {
-        display: flex;
+         display: flex;
         }
+
+    &-item-cont{
+        outline: 2px solid #2196F3;
         }
-    
-    }
-}
-
-
-
-
-.what-we-do-item + .what-we-do-item{
-    margin-left: 27px;
-}
-
- 
-
-.what-we-do-item-cont{
-
-
-    outline: 2px solid #2196F3;
- 
-
-}
-
-
-
-
-.what-we-do-top-text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    width: 370px;
-    height: 70px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #ffffff;
-    font-weight: 600;
-    background: rgba(47, 48, 58, 0.8);
-    transform: translateY(320%);
 
 }
