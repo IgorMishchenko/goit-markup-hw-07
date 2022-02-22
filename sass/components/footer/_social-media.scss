@@ -1,38 +1,24 @@
-/*Social media*/
+//Social media//
 .footer-social-media {
 
     &-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
+        @include font(Roboto, normal, bold, 14px, 16px, none, 0.03em);
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $main-white-color;
         padding-bottom: 20px;
-    }
+        }
 
     &-list{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
+        @include font(Roboto, normal, bold, 14px, 16px, none, 0.03em);
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $main-white-color;
         display: flex;
-    }
+        }
 
     margin-top: -120px;
     padding-left: 300px;
     align-items:baseline;           
 }
-
-
-
-
 
 
 .footer-social-media-item + .footer-social-media-item{
@@ -47,17 +33,17 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    fill: #FFFFFF;
-    color:  #FFFFFF;
+    fill:   $main-white-color;
+    color:  $main-white-color;
     background-color: rgba(255, 255, 255, 0.1);
     transition: color 300ms linear, fill 300ms linear, outline 300ms linear,background-color 300ms linear;
   
     &:focus,
     &:hover{
-        fill: #FFFFFF;
-        color:  #FFFFFF;
-        outline: 2px solid #FFFFFF;
-        background-color: #2196F3;
+        fill:   $main-white-color;
+        color:  $main-white-color;
+        outline: 2px solid $main-white-color;
+        background-color: $main-blue-color;
     }
     
 

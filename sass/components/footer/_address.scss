@@ -1,34 +1,20 @@
 
 .foter-address{
+    padding-top: 20px;
+       
     &-item{
         margin-top: 9px;
-        }
+            }
     
     &-text1{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
-            text-decoration: none;
+        @include font(Roboto, normal, normal, 14px, 1.71, none, 0.03em);
+        color: $main-white-color;
         }
 
     &-text2{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-        
-            color: rgba(255, 255, 255, 0.6);
-            text-decoration: none;
-           
+        @include font(Roboto, normal, normal, 14px, 1.71, none, 0.03em);
+        color: rgba(255, 255, 255, 0.6);
         }
-    padding-top: 20px;
-      
 }
 
 

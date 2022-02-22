@@ -1,10 +1,12 @@
+//footer subscribe
+
 .footer-subscribe {
     margin-top: -80px;
     margin-left: 590px;
    }
 
 .footer-form-label {
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 14px;
@@ -29,27 +31,26 @@ padding-bottom: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
-    color:#ffffff;
+    color: $main-white-color;
     font-style: 12px;
     padding-left: 10px;
+
+    &::placeholder {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        padding-left: 10px;
+        color: rgba(255, 255, 255, 0.6);
+    }
     
 }
 
-.footer-form-input::placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
- 
-    
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    padding-left: 10px;
-    
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
  
 
