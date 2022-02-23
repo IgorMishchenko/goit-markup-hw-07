@@ -3,15 +3,11 @@
   display: flex;
   margin-left: auto;
   
-    &-item + &-item{
+    &__item + &__item{
     margin-left: 50px;
     }
 
-    &-icon{
-    margin-left: 15px;
-    }
-
-    &-link{
+    &__link{
     @include font(Roboto, normal, 500, 14px, 1.14, none, 0.02em);
     color: $main-gray-color;
     transition: color 300ms linear, fill 300ms linear;

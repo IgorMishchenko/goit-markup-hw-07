@@ -15,7 +15,7 @@
 
 
 //hero-button/
-&-button{
+&__button{
     @include font(Roboto, normal, bold, 16px, 1.87, none, 0.06em);
     align-items: center; 
     text-align: center;
@@ -30,7 +30,7 @@
     margin-top: 50px;
     transition: color 300ms linear, background-color 300ms linear;
 }
-&-title {
+&__title {
   @include font(Roboto, normal, 900, 44px, 1.36, none, 0.06em);
   text-transform: uppercase;
   color: $main-white-color;

@@ -2,11 +2,11 @@
 .what-we-do{
     padding-bottom: 94px;
 
-    &-item + &-item{
+    &__item + &__item{
         margin-left: 27px;
     }
 
-    &-top-text {
+    &__text {
         @include font(Roboto, normal, bold, 14px, 1.5, none, 0.03em);
         text-align: center;
         text-transform: uppercase;
@@ -22,23 +22,19 @@
         transform: translateY(320%);
     }
 
-    &-title {
+    &__title {
         @include font(Roboto, normal, bold, 36px, 1.16, none, 0.03em);
          color: $main-black-color;
         text-align: center;
         margin-bottom: 50px;
     }
-    &-wrap{
+    &__wrap{
         position: relative;
         overflow: visible;
         }
 
-    &-list {
+    &__list {
          display: flex;
-        }
-
-    &-item-cont{
-        outline: 2px solid #2196F3;
         }
 
 }

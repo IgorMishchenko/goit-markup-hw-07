@@ -1,24 +1,28 @@
 //--->Utill<---
-@import "./utill/modal-window";
-@import "./utill/variables";
+@import "./utill/_modal-window";
+@import "./utill/_variables";
 
 //--->Components
 //Header
-@import "./components/header/header";
-@import "./components/header/logo";
-@import "./components/header/navigation";
-@import "./components/header/contacts";
+@import "./components/header/_header";
+@import "./components/header/_logo";
+@import "./components/header/_navigation";
+@import "./components/header/_contacts";
 
 //Body
-@import "./components/body/body";
-@import "./components/body/hero";
-@import "./components/body/our-team";
-@import "./components/body/partners";
-@import "./components/body/services";
-@import "./components/body/what-we-do";
+@import "./components/body/_body";
+@import "./components/body/_hero";
+@import "./components/body/_our-team";
+@import "./components/body/_partners";
+@import "./components/body/_services";
+@import "./components/body/_what-we-do";
+
+
+@import "./components/body/_our-projects-menu";
+@import "./components/body/_our-projects-icons";
 
 //Footer
-@import "./components/footer/logo";
-@import "./components/footer/address";
-@import "./components/footer/social-media";
-@import "./components/footer/subscribe";
+@import "./components/footer/_logo";
+@import "./components/footer/_address";
+@import "./components/footer/_social_networks";
+@import "./components/footer/_subscribe";

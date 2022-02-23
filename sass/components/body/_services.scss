@@ -6,20 +6,21 @@
     background-attachment: fixed;
     background-size: 100% 100%;
 
-    &-title {
+    &__title {
         @include font(Roboto, normal, bold, 14px, 1.16, none, 0.03em);    
         text-transform: uppercase;
         color: $main-black-color;
         margin-top: 30px;
+
         }
     
-    &-text{
+    &__text{
         @include font(Roboto, normal, normal, 14px, 1.71, none, 0.03em);
         color: $main-gray-color;
         padding-top: 10px;
         }
     
-    &-item{
+    &__item{
         width: 270px;
 
         & + &{
@@ -29,12 +30,12 @@
 
 }
 
-.sevices-list{
+.sevices__list{
     display: flex;
 }
 
 
-.services-link-container{
+.services__container{
     background-color:#F5F4FA;
     height: 92px;
     display: flex;
@@ -46,7 +47,7 @@
     margin-bottom: 30px;
 
 }
-
+/**
 .services-bg{
     position: absolute;
     left: 0px;
@@ -54,3 +55,5 @@
     background: rgba(47, 48, 58, 0.4);
     margin: 0 auto;
 }
+
+**/

@@ -1,84 +1,93 @@
-
 .our-team{
-        padding-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background:  rgb(245, 244, 250);
+
+&__list {
+    display: flex;
+    }
+
+&__h3 {
+    @include font(Roboto, normal, 500, 16px, 1.18, none, 0.03em);
+    color: $main-black-color;
+    text-align: center;
+    }
+
+&__text {
+    @include font(Roboto, normal, 400, 16px, 1.18, none, 0.03em);
+    color: $main-gray-color;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    }
+
+&__title{
+    @include font(Roboto, normal, bold, 36px, 1.16, none, 0.03em);
+     color:  $main-black-color;
+    text-align: center;
+    margin-bottom: 50px;
+     }
+
+     &__conteiner {
         padding-top: 94px;
-        background:  rgb(245, 244, 250);
-
-    &-list {
-        display: flex;
-        }
-
-    &-text-h3 {
-        @include font(Roboto, normal, 500, 16px, 1.18, none, 0.03em);
-        color: $main-black-color;
-        text-align: center;
-        }
-
-    &-text-p {
-        @include font(Roboto, normal, 400, 16px, 1.18, none, 0.03em);
-        color: $main-gray-color;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        }
-
-    &-title{
-        @include font(Roboto, normal, bold, 36px, 1.16, none, 0.03em);
-         color:  $main-black-color;
-        text-align: center;
-        margin-bottom: 50px;
-         }
-     
-    &-item{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: $main-white-color;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-        transition: color 300ms linear;
-        
-        &:focus, &:hover{
-                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            }
-
-            & + &{
-                margin-left: 30px;
-            }
-            &-cont {
-            padding-top: 94px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            background: $main-white-color;
+        }
+ 
+&__item{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: color 300ms linear;
+    
+    &:focus, &:hover{
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            }
-               
-      }
-    }
-   
- .our-team-social-list{
-        display: flex;
-        justify-content: center;
         }
 
-.our-team-social-link{
-    
-    &-icon{
-        fill: currentColor;
+        & + &{
+            margin-left: 30px;
+        }
+        &-cont {
+        padding-top: 94px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: $main-white-color;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+           
+  }
+}
+//social links
+
+.our-team-social-list{
+    display: flex;
+    justify-content: center;
     }
 
-      width: 44px;
-      height: 44px;
-      
-      border-radius: 50%;
-      display: flex;
-      align-items:center;
-      justify-content: center;
-      color: #AFB1B8;
-      transition: color 300ms linear,background-color 300ms linear;
-  
-       
-  &:hover, &:focus{
-    background-color: $main-blue-color;
-    color: $main-white-color;
-    }
+.our-team-social__link{
+
+&__icon{
+    fill: $main-light-gray-color;
 }
+
+  width: 44px;
+  height: 44px;
   
-.our-team-social-item + .our-team-social-item{
-      margin-left: 10px;
-  }
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: $main-light-gray-color;
+  transition: color 300ms linear,background-color 300ms linear;
+
+   
+&:hover, &:focus{
+background-color: $main-blue-color;
+color: $main-white-color;
+fill: #ffffff;
+}
+}
+
+.our-team-social__item + .our-team-social__item{
+  margin-left: 10px;
+} 

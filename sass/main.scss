@@ -10,15 +10,19 @@
 @import "./components/header/_contacts";
 
 //Body
+//-->Index
 @import "./components/body/_body";
 @import "./components/body/_hero";
 @import "./components/body/_our-team";
 @import "./components/body/_partners";
 @import "./components/body/_services";
 @import "./components/body/_what-we-do";
+//-->Portfolio
+@import "./components/body/_portfolio-menu";
+@import "./components/body/_portfolio-icons";
 
 //Footer
 @import "./components/footer/_logo";
 @import "./components/footer/_address";
-@import "./components/footer/_social-media";
+@import "./components/footer/_social_networks";
 @import "./components/footer/_subscribe";

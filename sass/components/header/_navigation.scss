@@ -4,11 +4,11 @@
     display: flex;
  margin-left: 93px;
  //.header-nav-item + .header-nav-item
- &-item + &-item {
+ &__item + &__item {
 margin-left: 50px;
 }
 //.header-nav-link 
- &-link{
+ &__link{
     @include font(Roboto, normal, 500, 14px, 1.14, none, 0.02em);
     color: $main-black-color;
     transition: color 300ms linear, fill 300ms linear;
@@ -23,7 +23,7 @@ margin-left: 50px;
     }
     
        //.header-nav-link-active
-    &-active {
+    &_active {
         @include font(Roboto, normal, 500, 14px, 1.14, none, 0.02em);
         
         color: $main-blue-color;
