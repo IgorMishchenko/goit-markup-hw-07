@@ -704,7 +704,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: tomato;
+  color: #212121;
   margin-top: 30px;
 }
 
@@ -742,19 +742,6 @@ body {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-}
-
-.services__title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: tomato;
-  margin-top: 30px;
 }
 
 .what-we-do {
