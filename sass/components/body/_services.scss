@@ -7,12 +7,12 @@
     background-size: 100% 100%;
 
     &__title {
-        @include font(Roboto, normal, bold, 14px, 1.16, none, 0.03em);    
+        @include font(Roboto, normal, bold, 14px, 16px, none, 0.03em);    
         text-transform: uppercase;
         color: $main-black-color;
         margin-top: 30px;
-
-        }
+        font-family: Roboto;
+         }
     
     &__text{
         @include font(Roboto, normal, normal, 14px, 1.71, none, 0.03em);

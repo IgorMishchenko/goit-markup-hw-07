@@ -700,12 +700,13 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.16;
+  line-height: 16px;
   text-decoration: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
   margin-top: 30px;
+  font-family: Roboto;
 }
 
 .services__text {
@@ -933,17 +934,14 @@ body {
 
 .our-projects-top-text {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   position: absolute;
   top: 0;
   left: 0;
-  font-weight: 600;
   background-color: #2196F3;
   padding: 30px;
   height: 100%;
